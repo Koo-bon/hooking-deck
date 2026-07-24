@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>발표 스크립트 v3 — 후킹 되거나, 훅 가는 시대 (34장)</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0d0b0e;color:#ece8ec;font-family:"Apple SD Gothic Neo",Pretendard,sans-serif;line-height:1.7;padding:40px 20px;word-break:keep-all}
+  .wrap{max-width:880px;margin:0 auto}
+  h1{font-size:28px;font-weight:900;margin-bottom:6px}
+  .meta{color:#9a8f96;font-size:14px;margin-bottom:26px}
+  h2{font-size:15px;font-weight:800;color:#ff6b6b;letter-spacing:.14em;margin:38px 0 14px;border-bottom:1px solid #2c2530;padding-bottom:8px}
+  .s{background:#161318;border:1px solid #262029;border-radius:14px;padding:18px 20px;margin-bottom:12px}
+  .n{display:inline-block;background:#ff4d4d;color:#fff;font-weight:900;font-size:13px;border-radius:8px;padding:2px 10px;margin-right:8px}
+  .t{font-weight:800;font-size:15.5px;color:#fff}
+  .time{float:right;color:#8f8490;font-size:12.5px;font-weight:700}
+  .say{margin-top:10px;font-size:15px;color:#ddd6dd}
+  .say em{color:#ff8b8b;font-style:normal;font-weight:800}
+  .cue{margin-top:8px;color:#7fb6d9;font-size:13px}
+  .cue::before{content:"🎬 "}
+  .tbl{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0 4px}
+  .tbl td,.tbl th{border:1px solid #2c2530;padding:7px 10px;text-align:left}
+  .tbl th{color:#ff8b8b;font-weight:800;background:#1a161c}
+</style></head><body><div class="wrap">
+
+<h1>🎣 발표 스크립트 v3 — 34장</h1>
+<div class="meta">후킹 되거나, 훅 가는 시대 · 약 45분 · 청중: 클로드 코드를 조금 아는 마케터·기획자·사업자 · (3/4 스왑, 하네스 흐름 추가, 페르소나 장표 삭제 반영)</div>
+
+<table class="tbl"><tr><th>구간</th><th>장표</th><th>시간</th><th>미션</th></tr>
+<tr><td>오프닝</td><td>1~6</td><td>0:00–6:00</td><td>영상+숫자로 3분 안에 신뢰 확보</td></tr>
+<tr><td>자동화 OS</td><td>7~16</td><td>6:00–18:00</td><td>반복지옥 공감 → 시스템·조직·하네스 흐름</td></tr>
+<tr><td>스킬 5종</td><td>17~25</td><td>18:00–33:00</td><td>인터랙션(플립·드래그·영상)으로 증명</td></tr>
+<tr><td>시행착오·느낀점</td><td>26~29</td><td>33:00–39:00</td><td>정직한 실패담으로 신뢰 마감</td></tr>
+<tr><td>마무리·선물</td><td>30~34</td><td>39:00–45:00</td><td>따라하기 안내 + 선물 + 한 줄로 각인</td></tr></table>
+
+<h2>오프닝 (1~6 · 0:00–6:00)</h2>
+
+<div class="s"><span class="n">1</span><span class="t">표지</span><span class="time">0:00</span>
+<div class="say">"안녕하세요, 아트디렉터 구본혁입니다. 오늘 제목이 좀 셉니다 — <em>후킹 되거나, 훅 가는 시대.</em> 45분 뒤에 이 말이 무슨 뜻인지 몸으로 아시게 될 거예요."</div></div>
+
+<div class="s"><span class="n">2</span><span class="t">자담치킨 영상</span><span class="time">0:40</span>
+<div class="say">"먼저 이거 하나 보고 시작할게요. (영상) 방금 안 넘기고 보셨죠? 자담치킨 <em>'옷이 날개다'</em> — 관용구 하나 비틀어서 3초에 꽂은 겁니다. 뿌슐랭 AI 공모전 수상작이에요."</div>
+<div class="cue">🔊 소리 켜고 재생. 끝나면 한 박자 쉬고 "안 넘기셨죠?"</div></div>
+
+<div class="s"><span class="n">3</span><span class="t">자기소개 (아트디렉터)</span><span class="time">1:40</span>
+<div class="say">"저는 아트디렉터 구본혁입니다. AD·디자이너·AE로 캠페인 전반을 해왔고, 공모전 5관왕 했어요. 익숙한 것에 <em>낯선 한 끗</em>을 더하는 걸 제일 좋아합니다. 오늘은 '제가 잘한다' 자랑이 아니라, <em>어떻게 하면 여러분도 되는가</em> 얘기예요."</div>
+<div class="cue">3·4 순서 바뀜 — 이제 '누구인지' 먼저, 그 다음 '숫자'로 증명</div></div>
+
+<div class="s"><span class="n">4</span><span class="t">숫자 셋 (632만 · 280만 · 1,290만)</span><span class="time">2:40</span>
+<div class="say">"그래서 결과가 어떻냐. 연예인 없이 만든 영상 <em>4편이 합쳐서 1,290만 뷰</em>예요. 아일로 본편 632만, 하나은행 280만… 이게 운이 아니라 <em>방법</em>이더라고요. 오늘 그 방법을 공개합니다."</div></div>
+
+<div class="s"><span class="n">5</span><span class="t">오길비</span><span class="time">3:40</span>
+<div class="say">"광고계 전설 오길비가 이런 말을 했어요. <em>'헤드라인을 쓰는 순간, 광고비의 80%를 이미 쓴 것이다.'</em> 첫 줄에서 승부가 끝난다는 거죠. 오늘 강의를 관통하는 문장입니다."</div>
+<div class="cue">오길비 모르는 분 위해 "광고계 전설"이라고 먼저 소개</div></div>
+
+<div class="s"><span class="n">6</span><span class="t">이런 분께</span><span class="time">4:40</span>
+<div class="say">"카피가 필요한 마케터, 제안서로 승부하는 기획자·영업, 그리고 클로드를 더 제대로 쓰고 싶은 분 — 오늘 각자 하나씩은 가져가시게 준비했어요."</div></div>
+
+<h2>자동화 OS (7~16 · 6:00–18:00)</h2>
+
+<div class="s"><span class="n">7</span><span class="t">섹션 02</span><span class="time">6:00</span>
+<div class="say">"1부, 제가 만든 자동화 OS부터 보여드릴게요."</div></div>
+
+<div class="s"><span class="n">8</span><span class="t">반복 지옥</span><span class="time">6:30</span>
+<div class="say">"처음엔 저도 이랬어요. 기획은 Claude, 이미지는 GPT, 합성은 Canva, 카피는 또 직접… 소재 하나 끝나면 <em>또 처음부터.</em> 그래서 계속 든 생각 — <em>'진짜, 다 자동화 안 되나?'</em> 여기서 다 시작됐습니다."</div>
+<div class="cue">칩 애니 손으로 짚기. "다들 해보셨죠?" 공감 유도</div></div>
+
+<div class="s"><span class="n">9</span><span class="t">후킹을, 시스템으로</span><span class="time">8:00</span>
+<div class="say">"그래서 만들었어요. 미리 말하면 흔한 'PPT 자동 생성기' 아닙니다. <em>멈추게 하는 결과물이 나오는</em> 시스템이에요. 이 차이가 오늘의 전부예요."</div></div>
+
+<div class="s"><span class="n">10</span><span class="t">PAZX 웹앱</span><span class="time">8:40</span>
+<div class="say">"말로만 하면 안 믿기니까, 진짜 웹앱으로 만들었어요 — PAZX. 브라우저에서 누구나 쓰게요."</div></div>
+
+<div class="s"><span class="n">11~13</span><span class="t">결과물 그리드 3장</span><span class="time">9:40</span>
+<div class="say">"실제 결과물이에요. 브리프 <em>한 줄</em>로 노스엣센스 3컨셉이 통째로(11), 브랜드마다 이렇게 아일로·하나은행·리얼베리어·물빛(12), 그리고 제안서뿐 아니라 회사소개서·고객제안서·주간보고서까지 같은 방식으로(13). 업무마다 디자인이 완전히 다르죠 — 후킹덱은 워딩 크게, 보고서는 데이터 밀집."</div>
+<div class="cue">3연속이라 빠르게 — 장당 40초 이내. 12는 풀블리드 갤러리라 말 줄이고 보여주기</div></div>
+
+<div class="s"><span class="n">14</span><span class="t">조직도 (회사처럼)</span><span class="time">12:30</span>
+<div class="say">"이 시스템, 하나의 회사예요. 맨 위에서 제가 최종 결정하고, 그 아래 <em>부장이 있어요 — proposal-os.</em> 장표엔 '오케스트레이션(하네스)'라고 어렵게 써놨는데, 클로드 코드 써보신 분은 <em>'스킬을 순서대로 자동 호출해주는 사수'</em>라고 보시면 정확해요. 부장이 팀장들한테 일 나눠주고, 팀장 아래 스킬(사원)이 실제로 만들어요. 진하게 표시된 게 제가 직접 만든 스킬이고요."</div>
+<div class="cue">위→아래, 나 → 부장 → 팀장 → 스킬 순으로 손으로 짚기</div></div>
+
+<div class="s"><span class="n">15</span><span class="t">하네스 흐름 (게이트)</span><span class="time">14:00</span>
+<div class="say">"그럼 이 회사가 <em>어떤 순서로</em> 도느냐. 컨셉 프레이밍 → 훅 엔진 → 자료조사 → 디자인 → 검수, 이렇게 한 줄로 가요. 중요한 건 빨간 점선 — <em>'나 컨펌' 게이트</em>예요. 컨셉 방향, 후크 픽, 시안 픽, 최종 승인… 비싼 작업 들어가기 전에 제가 <em>멈춰서 '이 방향 OK?' 하고 고르는 지점</em>이에요. 그래서 여러 팀을 한꺼번에 못 돌리고 한 줄로 순서대로 가고요. 앞 단계 산출물이 있어야 다음이 돌아가요. <em>이 순서랑 게이트를 자동으로 도는 층이 '하네스'</em>, 그게 아까 그 부장 proposal-os예요."</div>
+<div class="cue">왼쪽부터 손으로 훑으며 점선 게이트에서 "여기서 멈춰요" 강조. 하네스=오케스트레이션=부장 이 셋이 같은 말임을 한 번 정리</div></div>
+
+<div class="s"><span class="n">16</span><span class="t">4스텝 (정리)</span><span class="time">16:00</span>
+<div class="say">"흐름을 한 장으로 줄이면 4스텝이에요. <em>① 훅 한 줄 ② 무드 고정 ③④ 검사관 검수 후 반복.</em> 이 순서만 기억하셔도 절반은 가져가신 거예요."</div></div>
+
+<h2>스킬 5종 (17~25 · 18:00–33:00)</h2>
+
+<div class="s"><span class="n">17</span><span class="t">섹션 03</span><span class="time">18:00</span>
+<div class="say">"2부, 이 시스템을 움직이는 무기 — 스킬이에요."</div></div>
+
+<div class="s"><span class="n">18</span><span class="t">스킬 = 취향 저장</span><span class="time">18:30</span>
+<div class="say">"스킬이 뭐냐. <em>내가 일하는 방식을 저장한 파일</em>이에요. 매번 설명 안 해도 내 기준으로 일하게 하는 '나 사용 설명서'. 만드는 법도 간단 — 좋은 레퍼런스 물리고, 똑같이 만들게 하고, 스스로 고치게 하고, 그 교정을 지침으로 저장. 이 4단계 반복이에요. <em>결국 내 취향이 쌓인 것</em>이라, 쓸수록 나를 닮아가요."</div></div>
+
+<div class="s"><span class="n">19</span><span class="t">스킬① 훅카피</span><span class="time">20:00</span>
+<div class="say">"첫 무기, 훅카피. 3초에 꽂히는 한국어 카피를 짓는 스킬이에요. 비결은 <em>레퍼런스를 직접 물렸다</em>는 것 — 실제 인스타 카피 계정 4개를 학습시켰어요. 원칙은 하나, <em>낚시 금지.</em> (이미지 클릭) 직접 시연 — 스킬 없이는 '보습 크림입니다' 설명형인데, 스킬 쓰면 <em>'무너진 건 보습이 아니라, 장벽이었어요'</em>가 나와요."</div>
+<div class="cue">🖱 이미지 클릭 → 플립 비포/애프터. 애프터 카피는 소리 내어 읽기</div></div>
+
+<div class="s"><span class="n">20</span><span class="t">스킬② 컨셉추얼KV</span><span class="time">22:30</span>
+<div class="say">"카피가 나왔으면 포스터로 — 컨셉추얼KV. 위 조합 칩 보이시죠, <em>카피는 훅카피가 짓고 생성은 힉스필드가</em>, 스킬끼리 합쳐 만든 거예요. 핵심은 Product Lock — 제품 원화를 물려서 형태·로고·색은 절대 안 바뀝니다. (드래그) 왼쪽이 스킬 없이 뽑은 흰 제품컷, 오른쪽이 결과물."</div>
+<div class="cue">↔ 핸들 천천히 드래그 — 흰 컷이 완성 KV로 바뀌는 순간이 하이라이트</div></div>
+
+<div class="s"><span class="n">21</span><span class="t">갤러리 (풀블리드)</span><span class="time">24:30</span>
+<div class="say">(말 줄이고 3초 보여주기) "…이게 다 그렇게 나온 결과물들입니다."</div>
+<div class="cue">설명 없이 잠깐 침묵 — 이미지가 말하게 두기</div></div>
+
+<div class="s"><span class="n">22</span><span class="t">스킬③ 크리틱디렉터</span><span class="time">25:00</span>
+<div class="say">"만들면 바로 검사 — 크리틱디렉터. 아래 칩 보이시죠, <em>다섯 개의 눈</em> — 정합성·완료·작품성·사실·비주얼, 서로 다른 눈으로 뜯어봐요. 예전엔 '예쁘니까 이걸로' 감으로 골랐다면, 지금은 <em>멈춤 퍼센트 정량 + 3초 정지 정성</em>으로 채점해 근거로 골라요."</div></div>
+
+<div class="s"><span class="n">23</span><span class="t">스킬④ teaser-factory</span><span class="time">27:00</span>
+<div class="say">"제일 아끼는 무기. <em>제품 사진 한 장이 티저가 됩니다.</em> 흐름은 셋 — 영상 프롬프트 학습, 힉스필드로 제품 고정한 채 3D 모션 생성, 한글 자막은 AI 아니라 Remotion 코드로 얹어요. 그래서 안 깨져요."</div></div>
+
+<div class="s"><span class="n">24</span><span class="t">티저 영상</span><span class="time">28:30</span>
+<div class="say">(영상 재생) "…방금 거, 제품 사진 <em>딱 한 장</em>으로 만든 거예요. BGM까지."</div>
+<div class="cue">🔊 소리 필수. 끝나고 "사진 한 장" 강조</div></div>
+
+<div class="s"><span class="n">25</span><span class="t">추천⑤ ponytail</span><span class="time">30:30</span>
+<div class="say">"마지막은 제가 만든 건 아니고 가져다 쓰는 오픈소스 — ponytail. 코드를 게으른 시니어처럼 최소로 짜게 해요. 숫자로 <em>코드량 -54%, 토큰 -22%, 시간 -27%.</em> 클로드 토큰 아끼고 싶은 분, 이거 하나만 깔아도 달라져요."</div></div>
+
+<h2>시행착오·느낀점 (26~29 · 33:00–39:00)</h2>
+
+<div class="s"><span class="n">26</span><span class="t">'이건 아니야' 2,000번</span><span class="time">33:00</span>
+<div class="say">"여기까지, 처음부터 잘 된 게 하나도 없어요. <em>'이건 아니야'를 2,000번 넘게</em> 말했어요. 그 교정 하나하나가 스킬의 지침으로 저장된 거예요."</div></div>
+
+<div class="s"><span class="n">27</span><span class="t">톤 학습 연대기</span><span class="time">34:00</span>
+<div class="say">"순서가 있었어요. 가상 브랜드 물빛으로 톤 기준 잡고 → 하나은행 → 노스엣센스 → 리얼베리어 → 최신 아일로. 덱마다 제 반려를 저장했더니 <em>지금은 첫 시안부터 제 결로 나와요.</em>"</div></div>
+
+<div class="s"><span class="n">28</span><span class="t">실패가 지침이 됐어요</span><span class="time">35:30</span>
+<div class="say">"대표 실패 넷 — 예쁜 무드샷만 뽑다 반려, 컨셉 직역하다 파란 콜라, 둥둥 뜬 이미지, 장표마다 딴 색. 전부 교훈이 되어 지침으로 박혔습니다."</div></div>
+
+<div class="s"><span class="n">29</span><span class="t">느낀점</span><span class="time">37:00</span>
+<div class="say">"자동화하고 남은 건 시간이 아니라 <em>기준</em>이었어요. 취향이 자산이 되고, 반려가 지침이 되고 — 저는 이제 결정만 합니다."</div></div>
+
+<h2>마무리·선물 (30~34 · 39:00–45:00)</h2>
+
+<div class="s"><span class="n">30</span><span class="t">섹션 04</span><span class="time">39:00</span>
+<div class="say">"마지막, 여러분 차례예요."</div></div>
+
+<div class="s"><span class="n">31</span><span class="t">webdeck 따라 만들기</span><span class="time">39:30</span>
+<div class="say">"오늘 보신 웹덱, 여러분도 만들 수 있어요. 깃헙에서 webdeck 스킬 무료로 받아 클로드에 넣고, <em>'이 내용으로 제안서 웹덱 만들어줘'</em> 한 마디면 됩니다. 모바일에서도 열려요. 링크는 정리 노션에 있어요."</div>
+<div class="cue">"제 풀버전은 이미지 생성 MCP까지 물지만, 이 스킬은 그 라이트 버전 — 레이아웃·타이포·애니는 거의 같게 나와요" 한 줄 덧붙이면 정직함</div></div>
+
+<div class="s"><span class="n">32</span><span class="t">선물 — variant.com</span><span class="time">41:00</span>
+<div class="say">"선물 하나 — variant.com. 스크롤만 해도 디자인 레퍼런스가 끝없이 나와요. <em>훅 감각은 매일 채우는 거예요.</em>"</div></div>
+
+<div class="s"><span class="n">33</span><span class="t">추천 계정 — GO | AI 실험실</span><span class="time">42:00</span>
+<div class="say">"하나 더 — @gojaehyun.go, 'AI 실험실'. 앱 50개 배포하고 20개 넘게 인기차트 올린 개발자인데 <em>코드를 전부 무료로</em> 풀어요. 아이디어가 앱이 되는 과정이 궁금하면 팔로우."</div></div>
+
+<div class="s"><span class="n">34</span><span class="t">엔딩</span><span class="time">43:30</span>
+<div class="say">"오늘 많이 보여드렸는데, 한 줄만 남길게요. <em>멈추게 하세요 — 스크롤을, 시선을, 마음을.</em> (3초 쉼) 그 방법, 오늘 다 보여드렸어요. 내일 아침, 브리프 한 줄부터 시작하시면 됩니다. 감사합니다."</div>
+<div class="cue">카피 읽고 반드시 3초 침묵 → 감사 인사. 여운으로 끝내기</div></div>
+
+</div></body></html>
